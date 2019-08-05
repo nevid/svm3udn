@@ -123,7 +123,7 @@ func (t *SVSegDownl) Down() (merr int) {
 	pseg := &t.segs.segs[idx]
 
 	if pseg.furl == "" {
-		fmt.Printf("Null segment not download id=%d\n", pseg.idseg)
+		//fmt.Printf("Null segment not download id=%d\n", pseg.idseg)
 		t.segs.lastdlid = ds
 		return 0
 	}
